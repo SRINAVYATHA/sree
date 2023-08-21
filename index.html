@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <script src="https://kit.fontawesome.com/4c07b2f586.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header-Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://media.licdn.com/dms/image/C5603AQEFCffkSGJm3w/profile-displayphoto-shrink_800_800/0/1653314944249?e=2147483647&v=beta&t=u7n9Tp64Q9V6y--BEWEQniub-uLRTQdMpw1wDuW5vmY" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certification">Certification</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="nav-box">
+                <div class="header-text">
+                  <P>Web developer</P>
+                  <h1>Hi, I'm <span>G.Srinavyatha</span><br>From India.</h1>
+                </div>
+                <div class="header-image">
+                    <img src="navya.jpg" alt="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- About-Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="my pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello My Self G.SRINAVYATHA<br>I am doing my graduation at<span class="college"><a href="https://www.drmgrdu.ac.in/"> Dr.MGR Educational and Research Institute.</a></span><br>3rd year student <br>My hobbies Travelling, learning new things. <br></p>
+
+                    <div class="tab-titels">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><hr><br>C <br>Python</li>
+                            <li><span>Web Development</span><hr><br>HTML<br>CSS<br></li>
+                
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Fresher: <br>As a fresher I'm eagier to pursuve a job in IT industry to develop my skills.</li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>SCHOOLING<br><hr>Priyadarsini Em High school<br><span>2007-2018</span><br>I did my schooling at Priyadarsini Em High school,kovur.<br>Secured 9.5 CGPA</li><br>
+                            <li>INTERMEDIATE<br><hr>Viswasai JR. Collage<br><span>2020</span><br>I did my intermediate at Viswasai JR. Collage,Nellore.<br>Secured 853 marks</li><br>
+                            <li>GRADUATION<br><hr>Dr.MGR.Educational and Research Institute<br><span>2021 - 2025</span><br>Currently B.Tech(CSE) ||| <sup>rd</sup> Year Student .</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Projects -->
+     <!-- <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" class="netflix">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>This is my first Project developed using HTML,CSS & JavaScript, it is fully-Responsive</p>
+                        <a href="https://cool-banoffee-744b62.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1628935687655-8530bb7211bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=411&q=80" alt="">
+                    <div class="layer">
+                        <h3>Basic Calculator</h3>
+                        <p>A basic calculator developed using HTML, CSS, JavaScript, it can perform all basic arithematic operations
+                        </p>
+                        <a href="https://zesty-caramel-06f182.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Online Images Searching website</h3>
+                        <p>HTML, CSS, and JS-fueled webpage leveraging Unsplash API, enabling seamless image searches in a sleek, interactive design.</p>
+                        <a href="https://sujit5784.github.io/Images/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div> -->
+
+    <!-- Certification-Section -->
+    <div id="certification">
+        <div class="container">
+            <h1 class="sub-title">My Certification</h1>
+
+            <div class="certification-list">
+                <div>
+                    <img src="tcs15_page-0001.jpg" alt="">
+                </div>
+                <div>
+                    <img src="G. SRINAVYATHA Offer Letter_page-0001.jpg" alt="">
+                </div>
+                <div>
+                    <img src="jonural_page-0001.jpg" alt="">
+                </div>
+                <div>
+                    <img src="maths.jpg" alt="">
+                </div>
+                <div>
+                    <img src="certi.png" alt="">
+                </div>
+
+                <div>
+                    <img src="tcs_page-0001.jpg" alt="">
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    </div>-->
+
+    
+    <!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> navyaguduru14@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9392973036</p>
+                <div class="social-icons">
+                
+                    <a href="https://www.linkedin.com/in/g-sri-navyatha-44691b284"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/navyasree1402/#"><i class="fa-brands fa-instagram"></i></a>
+                    
+                   </div>
+                   <a href="my resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @portfolio Made by <i class="fa-solid fa-heart"></i> <G class="SRINAVYATHA"></G></p>
+    </div>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzme4AIRLMQ1pcxH3drZIABDKZrM_T3fU4UwD3y7xwvO8u_7ns2xTBx-mhPi_cEd52-Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent Successfully"
+                setTimeout(() => {
+                    msg.innerHTML=""
+                }, 5000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+        const swiper = new Swiper('.swiper', {
+ autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+ },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+      </script>
+</body>
+
+</html>
